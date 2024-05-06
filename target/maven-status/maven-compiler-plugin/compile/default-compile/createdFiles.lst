@@ -1,0 +1,4 @@
+com/example/dockerExample/controller/TestController.class
+com/example/dockerExample/DockerExampleApplication.class
+com/example/dockerExample/repository/ProductRepository.class
+com/example/dockerExample/entity/Product.class
