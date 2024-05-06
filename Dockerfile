@@ -10,8 +10,9 @@ COPY ./src ./src
 RUN mvn clean install -DskipTests
 
 #start
-FROM eclipce-temurin:17-jre-jammy
+#FROM eclipce-temurin:17-jre-jammy
 #FROM openjdk:21
+FROM adoptopenjdk:17-jre
 WORKDIR /opt/app
 EXPOSE 8080
 COPY --from=builder /opt/app/target/*.jar /opt/app/*.jar
